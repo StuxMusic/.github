@@ -43,4 +43,4 @@ Copyright © 2026 Stux.Group. All rights reserved.
 ---
 
 *Built & Maintained by <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Music" valign="middle"> [Stux.Music](https://github.com/StuxMusic), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).  
-Stux.Music is a part of the <img src="https://global.media.stux.group/global/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
+Stux.Music is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
