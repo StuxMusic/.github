@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.3] - 2026-09-16
+### Fixed
+- `README.md`'s copyright line named `Stux.Group` (a brand, not a legal entity) — corrected to `Stux Group Ltd`.
+- `README.md` and `profile/README.md` still used the old `global.media.stux.group` logo/icon (with a leftover `alt="Stux.Group"` on the header logo) from before Stux.Music got its own branding — corrected to `global.media.stux.music/logo.png` and `/icon.png`.
+
 ## [1.1.2] - 2026-09-16
 ### Added
 - Bluesky and LinkedIn badges (`bsky.app/profile/stux.music`, `linkedin.com/company/stuxmusic`) in the "Connect with Us!" section, alongside the existing GitHub followers badge.

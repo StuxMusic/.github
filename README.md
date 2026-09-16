@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://global.media.stux.group/logo.png" alt="Stux.Group" width="360">
+  <img src="https://global.media.stux.music/logo.png" alt="Stux.Music" width="360">
 </p>
 
 # .github
@@ -38,9 +38,9 @@ This project follows [Semantic Versioning](https://semver.org/). Current version
 
 ## Copyright
 
-Copyright © 2026 Stux.Group. All rights reserved.
+Copyright © 2026 Stux Group Ltd. All rights reserved.
 
 ---
 
-*Built & Maintained by <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Music" valign="middle"> [Stux.Music](https://github.com/StuxMusic), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).  
+*Built & Maintained by <img src="https://global.media.stux.music/icon.png" height="14" alt="Stux.Music" valign="middle"> [Stux.Music](https://github.com/StuxMusic), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).  
 Stux.Music is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
