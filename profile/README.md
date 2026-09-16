@@ -18,14 +18,29 @@ We build and maintain the websites and tools behind Stux.Music, the record label
 
 Stux.Music exists to release and promote music by Stux Sharp, and to build the small set of tools — artist websites, smart-link portals — that support that.
 
+### Our Projects
+
+| Project | What it is |
+|---|---|
+| 🎵 [Website](https://github.com/StuxMusic/Website) | stux.music — the Stux.Music platform's own site. |
+| 🎤 [StuxSharp.com](https://github.com/StuxMusic/StuxSharp.com) | The official website for the artist Stux Sharp. |
+| 🔗 [Sharp.Stux.Music](https://github.com/StuxMusic/Sharp.Stux.Music) | The smart-link/release portal for Stux Sharp's music. |
+
 ### Get Involved
 
-1. **Explore our projects**: check out our repositories to see what we're building.
+1. **Explore our projects**: See the table above, or check out our repositories to see what we're building.
 2. **Follow us on GitHub**: stay updated on our latest releases and updates.
 
 ### Contact Us
 
-For inquiries, please reach out at [hello@stux.music](mailto:hello@stux.music). We'd love to hear from you!
+For inquiries, please reach out at [hello@stux.music](mailto:hello@stux.music). We'd love to hear from you!  
+For legal, privacy, or copyright matters, contact [legal@stux.music](mailto:legal@stux.music) instead.
+
+### Our Activity
+
+<div align="center">
+  <img width="512" src="https://raw.githubusercontent.com/StuxMusic/.github/metrics/stats.svg">
+</div>
 
 ---
 

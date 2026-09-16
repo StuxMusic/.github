@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.4] - 2026-09-16
+### Added
+- `profile/README.md` gained the "Our Projects" table (Website, StuxSharp.com, Sharp.Stux.Music), a `legal@stux.music` contact line, and the "Our Activity" widget, matching the fuller template already used by Stux.Group's own profile.
+
 ## [1.1.3] - 2026-09-16
 ### Fixed
 - `README.md`'s copyright line named `Stux.Group` (a brand, not a legal entity) — corrected to `Stux Group Ltd`.
