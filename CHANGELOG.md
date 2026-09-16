@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.5] - 2026-09-16
+### Fixed
+- `profile/README.md`'s "Our Activity" widget referenced `raw.githubusercontent.com/StuxMusic/.github/metrics/stats.svg`, but this repo had no workflow generating it — added `generateMetrics.yml`, matching the one already used by Stux.Group/StuxAPIs/Stuxedo/Stux.Cloud/Stux.Dev.
+
 ## [1.1.4] - 2026-09-16
 ### Added
 - `profile/README.md` gained the "Our Projects" table (Website, StuxSharp.com, Sharp.Stux.Music), a `legal@stux.music` contact line, and the "Our Activity" widget, matching the fuller template already used by Stux.Group's own profile.

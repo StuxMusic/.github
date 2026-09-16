@@ -1,0 +1,115 @@
+# GitHub Action for generating metrics
+name: Generate Metrics
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Ensure metrics branch exists (as an orphan, not branched from main)
+        run: |
+          if gh api "repos/$GITHUB_REPOSITORY/git/refs/heads/metrics" --silent 2>/dev/null; then
+            echo "metrics branch already exists - skipping."
+            exit 0
+          fi
+
+          # 4b825dc6... is git's well-known empty-tree hash - it exists in every
+          # repo, so a commit pointing at it needs no checkout to create. Not
+          # passing -f parents means the commit has none, making it a true root
+          # commit: the branch starts empty, sharing no history/files with main.
+          EMPTY_TREE="4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          COMMIT_SHA="$(gh api "repos/$GITHUB_REPOSITORY/git/commits" \
+            --method POST \
+            -f message="Initialize metrics branch" \
+            -f tree="$EMPTY_TREE" \
+            --jq '.sha')"
+
+          gh api "repos/$GITHUB_REPOSITORY/git/refs" \
+            --method POST \
+            -f ref="refs/heads/metrics" \
+            -f sha="$COMMIT_SHA"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  stats:
+    needs: setup
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: gh-metrics/metrics@4bec7bde733c1dd3c5139ce2146d94a34ae62096
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: metrics
+          committer_message: "build: update `stats`"
+
+          user: StuxMusic
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Europe/London
+          config_output: svg
+          config_padding: 0, 30
+          filename: stats.svg
+
+  notable_simple:
+    needs: setup
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: gh-metrics/metrics@727b269a0e1af233e88b535a7555bb736e54b4b2
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: metrics
+          committer_message: "build: update `notable_simple`"
+
+          user: StuxMusic
+          template: classic
+          base: ""
+          config_display: large
+          config_timezone: Europe/London
+          config_output: svg
+          config_padding: 0, 30
+          filename: notable_simple.svg
+
+          plugin_notable: yes
+          plugin_notable_filter: stars:>25
+
+  notable_indepth:
+    needs: setup
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: gh-metrics/metrics@727b269a0e1af233e88b535a7555bb736e54b4b2
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: metrics
+          committer_message: "build: update `notable_indepth`"
+
+          user: StuxMusic
+          template: classic
+          base: ""
+          config_display: large
+          config_timezone: Europe/London
+          config_output: svg
+          config_padding: 0, 30
+          filename: notable_indepth.svg
+
+          plugin_notable: yes
+          plugin_notable_filter: stars:>25
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_notable_from: all
