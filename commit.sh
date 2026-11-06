@@ -41,4 +41,4 @@ else
   echo "Tagged $TAG"
 fi
 
-echo "Done. Push with: git push && git push origin $TAG"
+echo "Push with: git push origin test --tags, then open a pull request from test into main."
