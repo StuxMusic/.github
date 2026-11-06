@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://global.media.stux.music/logo.png" height="100" alt="Stux.Music Logo">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.music/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.music/logo-dark.png"><img src="https://global.media.stux.music/logo-dark.png" height="100" alt="Stux.Music Logo"></picture>
 </p>
 
 ## Welcome to the Stux.Music Official GitHub!
 
 ### *Independent Music, Done Right!*
 
-We build and maintain the websites and tools behind Stux.Music, the record label for the artist Stux Sharp.
+We build and maintain the websites and tools behind Stux.Music, the independent music label and home of the artist Stux Sharp, and the artists listed at [artists.stux.music](https://artists.stux.music).
 
 ### Connect with Us!
 
@@ -16,20 +16,32 @@ We build and maintain the websites and tools behind Stux.Music, the record label
 
 ### Our Mission
 
-Stux.Music exists to release and promote music by Stux Sharp, and to build the small set of tools — artist websites, smart-link portals — that support that.
+Stux.Music exists to release and promote independent music, starting with Stux Sharp, and to build the small set of tools that support it: artist websites, smart-link portals, holding pages and release-asset generators.
 
 ### Our Projects
 
 | Project | What it is |
 |---|---|
-| 🎵 [Website](https://github.com/StuxMusic/Website) | stux.music — the Stux.Music platform's own site. |
-| 🎤 [StuxSharp.com](https://github.com/StuxMusic/StuxSharp.com) | The official website for the artist Stux Sharp. |
-| 🔗 [Sharp.Stux.Music](https://github.com/StuxMusic/Sharp.Stux.Music) | The smart-link/release portal for Stux Sharp's music. |
+| 🎵 [Stux.Music Website](https://stux.music) | [stux.music](https://stux.music): the Stux.Music platform's own site. |
+| 🎤 [Stux.Music Artists](https://github.com/StuxMusic/Artists) | [artists.stux.music](https://artists.stux.music): the directory of Stux.Music's artists, with live status. |
+| 💓 [Stux.Music Status](https://github.com/StuxMusic/Status) | [status.stux.music](https://status.stux.music): live status of every Stux.Music site, checked every 5 minutes. |
+| 🎧 [StuxSharp.com](https://stuxsharp.com) | The official website of the artist Stux Sharp. |
+| 🔗 [Sharp.Stux.Music](https://sharp.stux.music) | The smart-link portal for Stux Sharp's releases. |
+| 🎙️ [Stux.Music Artistpage](https://github.com/StuxMusic/artistpage) | The placeholder page a Stux.Music artist starts with until their own site is ready. |
+| ⏳ [Stux.Music Soonpage](https://github.com/StuxMusic/soonpage) | A "coming soon" holding page template. |
+| 🛠️ [Stux.Music Maintenancepage](https://github.com/StuxMusic/maintenancepage) | A maintenance holding page template. |
+| 🧱 Stux.Music Error Pages | Stux.Music's branded error pages for its web servers (private). |
+| 🎬 Stux.Music Song Assets Generators | The toolchain that makes release assets, such as lyric videos, for each song (private). |
+| ↪️ [stuxmusic.github.io](https://github.com/StuxMusic/stuxmusic.github.io) | Redirects the org's default GitHub Pages address to [stux.music](https://stux.music). |
 
 ### Get Involved
 
 1. **Explore our projects**: See the table above, or check out our repositories to see what we're building.
 2. **Follow us on GitHub**: stay updated on our latest releases and updates.
+
+### Service Status
+
+Check how every Stux.Music site is doing at [status.stux.music](https://status.stux.music).
 
 ### Contact Us
 
@@ -46,5 +58,5 @@ For legal, privacy, or copyright matters, contact [legal@stux.music](mailto:lega
 
 Thank you for visiting our profile!
 
-*Built & Maintained by <img src="https://global.media.stux.music/icon.png" height="14" alt="Stux.Music" valign="middle"> [Stux.Music](https://github.com/StuxMusic), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).  
-Stux.Music is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
+*Built & Maintained by <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.music/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.music/icon-dark.png"><img src="https://global.media.stux.music/icon-dark.png" height="14" valign="middle" alt="Stux.Music"></picture> [Stux.Music](https://github.com/StuxMusic), Hosted by <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stuxedo.com/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stuxedo.com/icon-dark.png"><img src="https://global.media.stuxedo.com/icon-dark.png" height="14" valign="middle" alt="Stuxedo"></picture> [Stuxedo](https://stuxedo.com).  
+Stux.Music is a part of the <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.group/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.group/icon-dark.png"><img src="https://global.media.stux.group/icon-dark.png" height="14" valign="middle" alt="Stux.Group"></picture> Stux.Group brand of businesses.*
