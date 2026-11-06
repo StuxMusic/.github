@@ -4,10 +4,10 @@ Thanks for your interest in contributing to this project.
 
 ## Development Workflow
 
-1. Create a feature branch off `main`.
+1. Work on `test`, or on a feature branch off it (see Branches).
 2. Make focused, well-described commits.
 3. Describe your changes in a new release entry at the top of `CHANGELOG.md` (see Versioning below).
-4. Open a pull request against `main`.
+4. Open a pull request from `test` into `main` (see Branches).
 
 ## Code Style
 
@@ -16,6 +16,12 @@ Thanks for your interest in contributing to this project.
   Link public repos to the repo, and private ones to their live site (or leave them unlinked if they have none).
 - Logos and icons use the light/dark `<picture>` style with the brand's `-light`/`-dark` files from its `global.media`
   host, never a local copy.
+
+## Branches
+
+- Work on `test`, or on a feature branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Merging into `main` updates the org profile at github.com/StuxMusic; release commits and tags are made on `test` (`git push origin test --tags`) and go live when the pull request is merged
 
 ## Versioning
 
