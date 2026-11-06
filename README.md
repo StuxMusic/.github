@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://global.media.stux.music/logo.png" alt="Stux.Music" width="360">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.music/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.music/logo-dark.png"><img src="https://global.media.stux.music/logo-dark.png" height="100" alt="Stux.Music Logo"></picture>
 </p>
 
 # .github
@@ -14,8 +14,9 @@ This repository contains the organization-wide configuration files for the Stux.
 
 ## What's Included
 
-- **Profile** — the public org profile shown at [github.com/StuxMusic](https://github.com/StuxMusic) (`profile/README.md`)
-- **Community Files** — contributing guidelines and other org-wide defaults
+- **Profile**: the public org profile shown at [github.com/StuxMusic](https://github.com/StuxMusic) (`profile/README.md`), with the table of the org's projects and a link to [status.stux.music](https://status.stux.music)
+- **Community Files**: contributing guidelines and other org-wide defaults
+- **Metrics**: `.github/workflows/generateMetrics.yml` draws the profile's "Our Activity" image daily onto the `metrics` branch
 
 ## How It Works
 
@@ -42,5 +43,5 @@ Copyright © 2026 Stux Group Ltd. All rights reserved.
 
 ---
 
-*Built & Maintained by <img src="https://global.media.stux.music/icon.png" height="14" alt="Stux.Music" valign="middle"> [Stux.Music](https://github.com/StuxMusic), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).  
-Stux.Music is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
+*Built & Maintained by <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.music/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.music/icon-dark.png"><img src="https://global.media.stux.music/icon-dark.png" height="14" valign="middle" alt="Stux.Music"></picture> [Stux.Music](https://github.com/StuxMusic), Hosted by <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stuxedo.com/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stuxedo.com/icon-dark.png"><img src="https://global.media.stuxedo.com/icon-dark.png" height="14" valign="middle" alt="Stuxedo"></picture> [Stuxedo](https://stuxedo.com).  
+Stux.Music is a part of the <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.group/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.group/icon-dark.png"><img src="https://global.media.stux.group/icon-dark.png" height="14" valign="middle" alt="Stux.Group"></picture> Stux.Group brand of businesses.*

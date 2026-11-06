@@ -6,12 +6,16 @@ Thanks for your interest in contributing to this project.
 
 1. Create a feature branch off `main`.
 2. Make focused, well-described commits.
-3. Add your changes under the `[Unreleased]` section of `CHANGELOG.md`.
+3. Describe your changes in a new release entry at the top of `CHANGELOG.md` (see Versioning below).
 4. Open a pull request against `main`.
 
 ## Code Style
 
-Project-specific conventions will be documented here as they're established.
+- Keep the org profile's **Our Projects** table (`profile/README.md`) in step with the org's repos: add a row when a repo
+  or site is created, remove it when one is retired. Use each project's full name ("Stux.Music Status", not "Status").
+  Link public repos to the repo, and private ones to their live site (or leave them unlinked if they have none).
+- Logos and icons use the light/dark `<picture>` style with the brand's `-light`/`-dark` files from its `global.media`
+  host, never a local copy.
 
 ## Versioning
 

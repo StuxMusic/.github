@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-1
+
+### Fixed
+
+- The profile said stuxmusic.github.io redirects to stux.music; it redirects to this GitHub profile, github.com/StuxMusic
+
+## v26.11.06
+
+### Added
+
+- The org profile lists every current project: Stux.Music Artists, Stux.Music Status, Stux.Music Artistpage, Soonpage
+  and Maintenancepage, the error pages, the song assets generators and the stuxmusic.github.io redirect, alongside the
+  website and Stux Sharp's sites
+- A "Service Status" section on the org profile linking to [status.stux.music](https://status.stux.music)
+
+### Changed
+
+- The logos and icons on the org profile and this README follow GitHub's light or dark theme (`<picture>` with each
+  brand's `-light`/`-dark` files), including the Stuxedo icon in the footer, which was GitHub's avatar
+- Every project in the profile table uses its full name, and private repos link to their live site instead of a
+  repository visitors can't open
+- The profile's intro and mission describe Stux.Music as a label for its listed artists, not just Stux Sharp
+- `CONTRIBUTING.md` describes the release flow and keeping the profile table up to date, instead of an `[Unreleased]`
+  section this changelog no longer uses
+
+### Removed
+
+- The empty `[Unreleased]` heading left below the newest release
+
 ## v26.10.23
 
 ### Added
@@ -16,8 +45,6 @@ and this project adheres to [Date Versioning](https://datevers.ing) since v26.10
 - Switched from Semantic Versioning to [Date Versioning](https://datevers.ing): releases are numbered by their UTC release date as `YY.MM.DD`, with `-1`, `-2`… for later releases the same day. This release follows v1.1.5
 - `commit.sh` and `commit.bat` refuse a `VERSION.md` that isn't a valid Date Version or is dated in the future (UTC), and warn when it's dated before today
 - `README.md` and `CONTRIBUTING.md` describe Date Versioning and the release steps
-
-## [Unreleased]
 
 ## [1.1.5] - 2026-09-16
 ### Fixed
