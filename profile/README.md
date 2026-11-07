@@ -30,8 +30,6 @@ Stux.Music exists to release and promote independent music, starting with Stux S
 | 🎙️ [Stux.Music Artistpage](https://github.com/StuxMusic/artistpage) | The placeholder page a Stux.Music artist starts with until their own site is ready. |
 | ⏳ [Stux.Music Soonpage](https://github.com/StuxMusic/soonpage) | A "coming soon" holding page template. |
 | 🛠️ [Stux.Music Maintenancepage](https://github.com/StuxMusic/maintenancepage) | A maintenance holding page template. |
-| 🧱 Stux.Music Error Pages | Stux.Music's branded error pages for its web servers (private). |
-| 🎬 Stux.Music Song Assets Generators | The toolchain that makes release assets, such as lyric videos, for each song (private). |
 | ↪️ [stuxmusic.github.io](https://github.com/StuxMusic/stuxmusic.github.io) | Redirects the org's default GitHub Pages address to this profile, [github.com/StuxMusic](https://github.com/StuxMusic). |
 
 ### Get Involved
