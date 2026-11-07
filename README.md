@@ -41,7 +41,7 @@ Work happens on the `test` branch: releases are committed and tagged there, and 
 
 ## Copyright
 
-Copyright © 2026 Stux Group Ltd. All rights reserved.
+Copyright © 2026 Stux.Music. All rights reserved.
 
 ---
 
