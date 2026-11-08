@@ -24,7 +24,7 @@ Stux.Music exists to release and promote independent music, starting with Stux S
 |---|---|
 | 🎵 [Stux.Music Website](https://stux.music) | [stux.music](https://stux.music): the Stux.Music platform's own site. |
 | 🎤 [Stux.Music Artists](https://github.com/StuxMusic/Artists) | [artists.stux.music](https://artists.stux.music): the directory of Stux.Music's artists, with live status. |
-| 💓 [Stux.Music Status](https://github.com/StuxMusic/Status) | [status.stux.music](https://status.stux.music): live status of every Stux.Music site, checked every 5 minutes. |
+| 💓 [Stux.Music Status](https://github.com/StuxMusic/Status) | [status.stux.music](https://status.stux.music): live status of every Stux.Music site, checked regularly. |
 | 🎧 [StuxSharp.com](https://stuxsharp.com) | The official website of the artist Stux Sharp. |
 | 🔗 [Sharp.Stux.Music](https://sharp.stux.music) | The smart-link portal for Stux Sharp's releases. |
 | 🎙️ [Stux.Music Artistpage](https://github.com/StuxMusic/artistpage) | The placeholder page a Stux.Music artist starts with until their own site is ready. |
