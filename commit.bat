@@ -3,6 +3,12 @@ setlocal enabledelayedexpansion
 
 cd /d "%~dp0"
 
+REM Releases are made on test (or a branch off it). staging and main only change through
+REM pull requests: test -> staging -> main.
+for /f "delims=" %%b in ('git -C "%~dp0." rev-parse --abbrev-ref HEAD') do set "BRANCH=%%b"
+if "%BRANCH%"=="main" goto wrongbranch
+if "%BRANCH%"=="staging" goto wrongbranch
+
 if not exist VERSION.md (
   echo error: VERSION.md not found
   exit /b 1
@@ -40,4 +46,11 @@ if errorlevel 1 (
   echo warning: tag %TAG% already exists, skipping tag creation
 )
 
-echo Push with: git push origin test --tags, then open a pull request from test into main.
+echo Push with: git push origin %BRANCH% --tags
+echo Then open a pull request into staging: gh pr create --base staging --head %BRANCH%
+echo Once staging is checked, open one from staging into main: gh pr create --base main --head staging
+exit /b 0
+
+:wrongbranch
+echo You're on %BRANCH%. Releases are made on test, then go test -^> staging -^> main through pull requests: git switch test 1>&2
+exit /b 1

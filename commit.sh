@@ -3,6 +3,14 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+# Releases are made on test (or a branch off it). staging and main only change through
+# pull requests: test -> staging -> main.
+BRANCH="$(git -C "$(dirname "${BASH_SOURCE[0]}")" rev-parse --abbrev-ref HEAD)"
+if [ "$BRANCH" = "main" ] || [ "$BRANCH" = "staging" ]; then
+    echo "You're on $BRANCH. Releases are made on test, then go test -> staging -> main through pull requests: git switch test" >&2
+    exit 1
+fi
+
 if [ ! -f VERSION.md ]; then
   echo "error: VERSION.md not found" >&2
   exit 1
@@ -41,4 +49,6 @@ else
   echo "Tagged $TAG"
 fi
 
-echo "Push with: git push origin test --tags, then open a pull request from test into main."
+echo "Push with: git push origin $BRANCH --tags"
+echo "Then open a pull request into staging: gh pr create --base staging --head $BRANCH"
+echo "Once staging is checked, open one from staging into main: gh pr create --base main --head staging"
