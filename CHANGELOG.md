@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15
+
+### Added
+
+- A `staging` branch between `test` and `main`: work and releases happen on `test`, `staging` changes only through a pull request from `test`, and `main` (live) only through one from `staging`. CONTRIBUTING's Branches section is now "Branches and going live", and the README's Versioning section says so
+
+### Changed
+
+- `commit.sh` and `commit.bat` refuse to run on `staging` or `main`, and print the push command and both `gh pr create` commands (into `staging`, then into `main`)
+- CI runs on pushes to `staging` too
+
 ## v26.11.08
 
 ### Changed
